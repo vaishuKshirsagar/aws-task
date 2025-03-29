@@ -1,2 +1,633 @@
 2025-03-29 15:10:36,216 [INFO] USER:VaishnaviAnilKshirsa generate.py:72:project LOG: Project name: task04
 2025-03-29 15:10:36,216 [INFO] USER:VaishnaviAnilKshirsa generate.py:79:project LOG: Project path: C:\AWS\aws-task
+2025-03-29 15:10:58,806 [INFO] USER:VaishnaviAnilKshirsa generate.py:72:project LOG: Project name: task04
+2025-03-29 15:10:58,808 [INFO] USER:VaishnaviAnilKshirsa generate.py:79:project LOG: Project path: C:\AWS\aws-task
+2025-03-29 15:48:14,764 [INFO] USER:VaishnaviAnilKshirsa generate.py:72:project LOG: Project name: task04
+2025-03-29 15:48:14,766 [INFO] USER:VaishnaviAnilKshirsa generate.py:79:project LOG: Project path: C:\AWS\aws-task
+2025-03-29 15:48:18,011 [INFO] USER:VaishnaviAnilKshirsa project.py:77:generate_project_structure LOG: Project task04 folder has been successfully created.
+2025-03-29 15:48:18,011 [INFO] USER:VaishnaviAnilKshirsa helper.py:330:timed LOG: Stage project, elapsed time: 0:00:03.246416
+2025-03-29 15:49:24,492 [INFO] USER:VaishnaviAnilKshirsa s3_resource.py:40:validate_bucket_name LOG: Starting validating bucket name 'syndicate-education-platform-custom-sandbox-artifacts-6675'
+2025-03-29 15:49:24,492 [INFO] USER:VaishnaviAnilKshirsa s3_resource.py:73:validate_bucket_name LOG: Finished validating bucket name 'syndicate-education-platform-custom-sandbox-artifacts-6675'
+2025-03-29 15:49:24,492 [INFO] USER:VaishnaviAnilKshirsa helper.py:525:convert LOG: Stripping run_id:JAP-11,run_type:stm,type:user,user_id:79e6d823 from "," a bit..
+2025-03-29 15:49:24,492 [INFO] USER:VaishnaviAnilKshirsa helper.py:529:convert LOG: Converting: run_id:JAP-11,run_type:stm,type:user,user_id:79e6d823 to dict..
+2025-03-29 15:49:24,492 [INFO] USER:VaishnaviAnilKshirsa helper.py:541:convert LOG: Converted to such a dict: {'run_id': 'JAP-11', 'run_type': 'stm', 'type': 'user', 'user_id': '79e6d823'}
+2025-03-29 15:49:26,966 [WARNING] USER:VaishnaviAnilKshirsa generator.py:76:generate_configuration_files LOG: The config_path property is not specified. The working directory is used
+2025-03-29 15:49:26,966 [ERROR] USER:VaishnaviAnilKshirsa __init__.py:44:_mkdir LOG: [WinError 183] Cannot create a file when that file already exists: 'C:\\AWS\\aws-task\\task04\\.syndicate-config-dev'
+2025-03-29 15:49:26,966 [WARNING] USER:VaishnaviAnilKshirsa generator.py:93:generate_configuration_files LOG: The "project_path" property is not specified. The working directory will be used as a project path. To change the path, edit the syndicate.yml by path C:\AWS\aws-task\task04\.syndicate-config-dev
+2025-03-29 15:49:27,000 [INFO] USER:VaishnaviAnilKshirsa generator.py:155:generate_configuration_files LOG: Syndicate initialization has been completed. 
+Set SDCT_CONF:
+Unix: export SDCT_CONF="C:\AWS\aws-task\task04\.syndicate-config-dev"
+Windows: setx SDCT_CONF C:\AWS\aws-task\task04\.syndicate-config-dev
+2025-03-29 15:49:27,006 [INFO] USER:VaishnaviAnilKshirsa helper.py:330:timed LOG: Stage config, elapsed time: 0:00:02.513209
+2025-03-29 15:49:54,860 [INFO] USER:VaishnaviAnilKshirsa handlers.py:106:syndicate LOG: Configuration used: C:\AWS\aws-task\task04\.syndicate-config-dev
+2025-03-29 15:49:57,211 [INFO] USER:VaishnaviAnilKshirsa processor.py:143:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-03-29 15:49:59,286 [INFO] USER:VaishnaviAnilKshirsa project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-29 15:49:59,288 [INFO] USER:VaishnaviAnilKshirsa project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-29 15:49:59,753 [INFO] USER:VaishnaviAnilKshirsa sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-29 15:49:59,753 [INFO] USER:VaishnaviAnilKshirsa helper.py:647:resolve_project_path LOG: Parameter: 'project_path' wasn't specified. Getting automatically
+2025-03-29 15:49:59,753 [INFO] USER:VaishnaviAnilKshirsa helper.py:651:resolve_project_path LOG: Path: 'C:/AWS/aws-task/task04' was assigned to the parameter: 'project_path'
+2025-03-29 15:49:59,753 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:223:_validate_resource_name LOG: Validating resource name: 'async_queue'
+2025-03-29 15:49:59,769 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:239:_validate_resource_name LOG: Resource name: 'async_queue' passed the validation
+2025-03-29 15:49:59,769 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:67:_get_deployment_resources_files LOG: Recursively getting all the deployment_resources.json with root 'C:/AWS/aws-task/task04'
+2025-03-29 15:49:59,769 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:87:_find_resources_by_type LOG: Looking for resource 'sqs_queue' in meta
+2025-03-29 15:49:59,769 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:93:_find_resources_by_type LOG: Found '{'C:\\AWS\\aws-task\\task04\\deployment_resources.json': set()}' inside with type 'sqs_queue'
+2025-03-29 15:49:59,769 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:103:_get_resource_meta_paths LOG: Looking for sqs_queue 'async_queue' in meta...
+2025-03-29 15:49:59,769 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:108:_get_resource_meta_paths LOG: Found sqs_queue 'async_queue' in these files: '[]'
+2025-03-29 15:49:59,769 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:217:_find_file_with_duplicate LOG: No duplicated sqs_queue with name 'async_queue' was found
+2025-03-29 15:49:59,769 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:152:generate_deployment_resource LOG: Generating deployment resources for sqs_queue 'async_queue'
+2025-03-29 15:49:59,769 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:160:_generate_resource_configuration LOG: Generating configuration for sqs_queue 'async_queue'
+2025-03-29 15:49:59,769 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:37:_resolve_configuration LOG: Resolving not required params...
+2025-03-29 15:49:59,769 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:44:_resolve_configuration LOG: Setting default value - the object 'False' of the class '<class 'bool'>' for param 'fifo_queue'
+2025-03-29 15:49:59,769 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:57:_resolve_configuration LOG: Setting given value '150' for param 'visibility_timeout'
+2025-03-29 15:49:59,769 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:53:_resolve_configuration LOG: Setting default value '0' for param 'delay_seconds'
+2025-03-29 15:49:59,769 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:53:_resolve_configuration LOG: Setting default value '1024' for param 'maximum_message_size'
+2025-03-29 15:49:59,769 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:53:_resolve_configuration LOG: Setting default value '60' for param 'message_retention_period'
+2025-03-29 15:49:59,769 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:53:_resolve_configuration LOG: Setting default value '0' for param 'receive_message_wait_time_seconds'
+2025-03-29 15:49:59,769 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:44:_resolve_configuration LOG: Setting default value - the object '{}' of the class '<class 'dict'>' for param 'policy'
+2025-03-29 15:49:59,769 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:37:_resolve_configuration LOG: Resolving not required params...
+2025-03-29 15:49:59,769 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:53:_resolve_configuration LOG: Setting default value 'False' for param 'content_based_deduplication'
+2025-03-29 15:49:59,769 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:44:_resolve_configuration LOG: Setting default value - the object '{}' of the class '<class 'dict'>' for param 'tags'
+2025-03-29 15:49:59,769 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:202:write LOG: Writing deployment resources for sqs_queue 'async_queue' to the file 'C:\AWS\aws-task\task04\deployment_resources.json'
+2025-03-29 15:49:59,778 [INFO] USER:VaishnaviAnilKshirsa meta.py:687:sqs_queue LOG: SQS queue 'async_queue' was added successfully
+2025-03-29 15:49:59,780 [INFO] USER:VaishnaviAnilKshirsa helper.py:330:timed LOG: Stage sqs_queue, elapsed time: 0:00:00.024067
+2025-03-29 15:50:06,716 [INFO] USER:VaishnaviAnilKshirsa handlers.py:106:syndicate LOG: Configuration used: C:\AWS\aws-task\task04\.syndicate-config-dev
+2025-03-29 15:50:09,112 [INFO] USER:VaishnaviAnilKshirsa processor.py:143:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-03-29 15:50:10,939 [INFO] USER:VaishnaviAnilKshirsa project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-29 15:50:10,939 [INFO] USER:VaishnaviAnilKshirsa project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-29 15:50:11,437 [INFO] USER:VaishnaviAnilKshirsa sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-29 15:50:11,437 [INFO] USER:VaishnaviAnilKshirsa helper.py:647:resolve_project_path LOG: Parameter: 'project_path' wasn't specified. Getting automatically
+2025-03-29 15:50:11,437 [INFO] USER:VaishnaviAnilKshirsa helper.py:651:resolve_project_path LOG: Path: 'C:/AWS/aws-task/task04' was assigned to the parameter: 'project_path'
+2025-03-29 15:50:11,437 [INFO] USER:VaishnaviAnilKshirsa helper.py:503:convert LOG: Checking whether eu-central-1 is a valid region...
+2025-03-29 15:50:11,437 [INFO] USER:VaishnaviAnilKshirsa helper.py:508:convert LOG: Value 'eu-central-1' is a valid region, returning..
+2025-03-29 15:50:11,453 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:223:_validate_resource_name LOG: Validating resource name: 'lambda_topic'
+2025-03-29 15:50:11,453 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:239:_validate_resource_name LOG: Resource name: 'lambda_topic' passed the validation
+2025-03-29 15:50:11,454 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:67:_get_deployment_resources_files LOG: Recursively getting all the deployment_resources.json with root 'C:/AWS/aws-task/task04'
+2025-03-29 15:50:11,454 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:87:_find_resources_by_type LOG: Looking for resource 'sns_topic' in meta
+2025-03-29 15:50:11,454 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:93:_find_resources_by_type LOG: Found '{'C:\\AWS\\aws-task\\task04\\deployment_resources.json': set()}' inside with type 'sns_topic'
+2025-03-29 15:50:11,454 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:103:_get_resource_meta_paths LOG: Looking for sns_topic 'lambda_topic' in meta...
+2025-03-29 15:50:11,454 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:108:_get_resource_meta_paths LOG: Found sns_topic 'lambda_topic' in these files: '[]'
+2025-03-29 15:50:11,454 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:217:_find_file_with_duplicate LOG: No duplicated sns_topic with name 'lambda_topic' was found
+2025-03-29 15:50:11,454 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:152:generate_deployment_resource LOG: Generating deployment resources for sns_topic 'lambda_topic'
+2025-03-29 15:50:11,454 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:160:_generate_resource_configuration LOG: Generating configuration for sns_topic 'lambda_topic'
+2025-03-29 15:50:11,454 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:37:_resolve_configuration LOG: Resolving not required params...
+2025-03-29 15:50:11,454 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:57:_resolve_configuration LOG: Setting given value 'eu-central-1' for param 'region'
+2025-03-29 15:50:11,454 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:44:_resolve_configuration LOG: Setting default value - the object '[]' of the class '<class 'list'>' for param 'event_sources'
+2025-03-29 15:50:11,454 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:44:_resolve_configuration LOG: Setting default value - the object '{}' of the class '<class 'dict'>' for param 'tags'
+2025-03-29 15:50:11,454 [INFO] USER:VaishnaviAnilKshirsa base_generator.py:202:write LOG: Writing deployment resources for sns_topic 'lambda_topic' to the file 'C:\AWS\aws-task\task04\deployment_resources.json'
+2025-03-29 15:50:11,454 [INFO] USER:VaishnaviAnilKshirsa meta.py:489:sns_topic LOG: SNS topic 'lambda_topic' was added successfully
+2025-03-29 15:50:11,460 [INFO] USER:VaishnaviAnilKshirsa helper.py:330:timed LOG: Stage sns_topic, elapsed time: 0:00:00.023291
+2025-03-29 15:50:26,612 [INFO] USER:VaishnaviAnilKshirsa handlers.py:106:syndicate LOG: Configuration used: C:\AWS\aws-task\task04\.syndicate-config-dev
+2025-03-29 15:50:28,947 [INFO] USER:VaishnaviAnilKshirsa processor.py:143:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-03-29 15:50:30,927 [INFO] USER:VaishnaviAnilKshirsa project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-29 15:50:30,927 [INFO] USER:VaishnaviAnilKshirsa project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-29 15:50:31,414 [INFO] USER:VaishnaviAnilKshirsa sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-29 15:50:31,414 [INFO] USER:VaishnaviAnilKshirsa helper.py:658:check_lambda_name LOG: Validating lambda name: 'sqs_handler'
+2025-03-29 15:50:31,414 [INFO] USER:VaishnaviAnilKshirsa helper.py:673:check_lambda_name LOG: Lambda name: 'sqs_handler' passed the validation
+2025-03-29 15:50:31,414 [INFO] USER:VaishnaviAnilKshirsa helper.py:647:resolve_project_path LOG: Parameter: 'project_path' wasn't specified. Getting automatically
+2025-03-29 15:50:31,414 [INFO] USER:VaishnaviAnilKshirsa helper.py:651:resolve_project_path LOG: Path: 'C:/AWS/aws-task/task04' was assigned to the parameter: 'project_path'
+2025-03-29 15:50:31,414 [INFO] USER:VaishnaviAnilKshirsa generate.py:116:lambda_function LOG: Lambda names: ('sqs_handler',)
+2025-03-29 15:50:31,430 [INFO] USER:VaishnaviAnilKshirsa generate.py:117:lambda_function LOG: Runtime: nodejs
+2025-03-29 15:50:31,430 [INFO] USER:VaishnaviAnilKshirsa generate.py:118:lambda_function LOG: Project path: C:/AWS/aws-task/task04
+2025-03-29 15:50:31,522 [INFO] USER:VaishnaviAnilKshirsa lambda_function.py:464:_generate_nodejs_lambdas LOG: Lambda sqs_handler created
+2025-03-29 15:50:31,534 [INFO] USER:VaishnaviAnilKshirsa lambda_function.py:169:generate_lambda_function LOG: Lambda sqs_handler has been successfully added to the project.
+2025-03-29 15:50:31,536 [INFO] USER:VaishnaviAnilKshirsa helper.py:330:timed LOG: Stage lambda_function, elapsed time: 0:00:00.122104
+2025-03-29 15:52:38,259 [INFO] USER:VaishnaviAnilKshirsa handlers.py:106:syndicate LOG: Configuration used: C:\AWS\aws-task\task04\.syndicate-config-dev
+2025-03-29 15:52:40,559 [INFO] USER:VaishnaviAnilKshirsa processor.py:143:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-03-29 15:52:42,407 [INFO] USER:VaishnaviAnilKshirsa project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-29 15:52:42,407 [INFO] USER:VaishnaviAnilKshirsa project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-29 15:52:42,900 [INFO] USER:VaishnaviAnilKshirsa sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-29 15:52:42,900 [INFO] USER:VaishnaviAnilKshirsa helper.py:658:check_lambda_name LOG: Validating lambda name: 'sns_handler'
+2025-03-29 15:52:42,900 [INFO] USER:VaishnaviAnilKshirsa helper.py:673:check_lambda_name LOG: Lambda name: 'sns_handler' passed the validation
+2025-03-29 15:52:42,900 [INFO] USER:VaishnaviAnilKshirsa helper.py:647:resolve_project_path LOG: Parameter: 'project_path' wasn't specified. Getting automatically
+2025-03-29 15:52:42,900 [INFO] USER:VaishnaviAnilKshirsa helper.py:651:resolve_project_path LOG: Path: 'C:/AWS/aws-task/task04' was assigned to the parameter: 'project_path'
+2025-03-29 15:52:42,904 [INFO] USER:VaishnaviAnilKshirsa generate.py:116:lambda_function LOG: Lambda names: ('sns_handler',)
+2025-03-29 15:52:42,904 [INFO] USER:VaishnaviAnilKshirsa generate.py:117:lambda_function LOG: Runtime: nodejs
+2025-03-29 15:52:42,904 [INFO] USER:VaishnaviAnilKshirsa generate.py:118:lambda_function LOG: Project path: C:/AWS/aws-task/task04
+2025-03-29 15:52:42,967 [INFO] USER:VaishnaviAnilKshirsa lambda_function.py:464:_generate_nodejs_lambdas LOG: Lambda sns_handler created
+2025-03-29 15:52:42,983 [INFO] USER:VaishnaviAnilKshirsa lambda_function.py:169:generate_lambda_function LOG: Lambda sns_handler has been successfully added to the project.
+2025-03-29 15:52:42,983 [INFO] USER:VaishnaviAnilKshirsa helper.py:330:timed LOG: Stage lambda_function, elapsed time: 0:00:00.083418
+2025-03-29 15:53:16,204 [INFO] USER:VaishnaviAnilKshirsa handlers.py:106:syndicate LOG: Configuration used: C:\AWS\aws-task\task04\.syndicate-config-dev
+2025-03-29 15:53:18,532 [INFO] USER:VaishnaviAnilKshirsa processor.py:143:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-03-29 15:53:20,386 [INFO] USER:VaishnaviAnilKshirsa project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-29 15:53:20,386 [INFO] USER:VaishnaviAnilKshirsa project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-29 15:53:20,890 [INFO] USER:VaishnaviAnilKshirsa sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-29 15:53:22,826 [INFO] USER:VaishnaviAnilKshirsa handlers.py:142:test LOG: Running tests...
+2025-03-29 15:53:22,826 [INFO] USER:VaishnaviAnilKshirsa handlers.py:150:test LOG: Tests not found, 'tests' folder is missing in 'C:/AWS/aws-task/task04'.
+2025-03-29 15:53:22,826 [INFO] USER:VaishnaviAnilKshirsa helper.py:330:timed LOG: Stage test, elapsed time: 0:00:00
+2025-03-29 15:53:22,847 [INFO] USER:VaishnaviAnilKshirsa handlers.py:993:assemble LOG: Building artifacts, bundle: task04_250329.155320
+2025-03-29 15:53:22,847 [INFO] USER:VaishnaviAnilKshirsa project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\AWS\aws-task\task04\jsrc\main\java\com\task04.
+2025-03-29 15:53:22,847 [INFO] USER:VaishnaviAnilKshirsa project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\AWS\aws-task\task04\src\lambdas.
+2025-03-29 15:53:22,847 [INFO] USER:VaishnaviAnilKshirsa project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\AWS\aws-task\task04\app\lambdas.
+2025-03-29 15:53:22,854 [INFO] USER:VaishnaviAnilKshirsa project_state.py:400:_update_lambdas_from_path LOG: Going to add the following 'nodejs' lambda:'sns_handler' to the pending ProjectState.
+2025-03-29 15:53:22,854 [INFO] USER:VaishnaviAnilKshirsa project_state.py:400:_update_lambdas_from_path LOG: Going to add the following 'nodejs' lambda:'sqs_handler' to the pending ProjectState.
+2025-03-29 15:53:22,854 [INFO] USER:VaishnaviAnilKshirsa project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\AWS\aws-task\task04\dnapp\lambdas.
+2025-03-29 15:53:22,854 [INFO] USER:VaishnaviAnilKshirsa project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\AWS\aws-task\task04\swagger_src.
+2025-03-29 15:53:22,854 [INFO] USER:VaishnaviAnilKshirsa project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\AWS\aws-task\task04\appsync_src.
+2025-03-29 15:53:22,867 [INFO] USER:VaishnaviAnilKshirsa handlers.py:821:assemble_node LOG: Command assemble node: project_path: app 
+2025-03-29 15:53:22,872 [INFO] USER:VaishnaviAnilKshirsa nodejs.py:58:assemble_node_lambdas LOG: Going to package lambdas starting by path C:\AWS\aws-task\task04\app
+2025-03-29 15:53:22,872 [INFO] USER:VaishnaviAnilKshirsa nodejs.py:64:assemble_node_lambdas LOG: Going to build artifact in: C:\AWS\aws-task\task04\app\lambdas\sns_handler
+2025-03-29 15:53:22,872 [INFO] USER:VaishnaviAnilKshirsa nodejs.py:64:assemble_node_lambdas LOG: Going to build artifact in: C:\AWS\aws-task\task04\app\lambdas\sqs_handler
+2025-03-29 15:53:23,730 [INFO] USER:VaishnaviAnilKshirsa nodejs.py:123:install_requirements LOG: Artifacts path: C:\AWS\aws-task\task04\.syndicate-config-dev\bundles\task04_250329.155320\sqs_handler-1.0
+2025-03-29 15:53:23,732 [INFO] USER:VaishnaviAnilKshirsa nodejs.py:123:install_requirements LOG: Artifacts path: C:\AWS\aws-task\task04\.syndicate-config-dev\bundles\task04_250329.155320\sns_handler-1.0
+2025-03-29 15:53:25,417 [INFO] USER:VaishnaviAnilKshirsa helper.py:107:execute_command_by_path LOG: Running the command "npm install"
+
+up to date, audited 1 package in 921ms
+
+found 0 vulnerabilities
+
+npm warn old lockfile
+npm warn old lockfile The package-lock.json file was created with an old version of npm,
+npm warn old lockfile so supplemental metadata must be fetched from the registry.
+npm warn old lockfile
+npm warn old lockfile This is a one-time fix-up, please be patient...
+npm warn old lockfile
+
+2025-03-29 15:53:25,417 [INFO] USER:VaishnaviAnilKshirsa nodejs.py:142:install_requirements LOG: No dependencies folder - nothing to copy.
+2025-03-29 15:53:25,438 [INFO] USER:VaishnaviAnilKshirsa helper.py:107:execute_command_by_path LOG: Running the command "npm install"
+
+up to date, audited 1 package in 938ms
+
+found 0 vulnerabilities
+
+npm warn old lockfile
+npm warn old lockfile The package-lock.json file was created with an old version of npm,
+npm warn old lockfile so supplemental metadata must be fetched from the registry.
+npm warn old lockfile
+npm warn old lockfile This is a one-time fix-up, please be patient...
+npm warn old lockfile
+
+2025-03-29 15:53:25,440 [INFO] USER:VaishnaviAnilKshirsa nodejs.py:142:install_requirements LOG: No dependencies folder - nothing to copy.
+2025-03-29 15:53:25,453 [INFO] USER:VaishnaviAnilKshirsa handlers.py:830:assemble_node LOG: NodeJS artifacts were prepared successfully.
+2025-03-29 15:53:25,454 [INFO] USER:VaishnaviAnilKshirsa helper.py:330:timed LOG: Stage assemble_node, elapsed time: 0:00:02.586764
+2025-03-29 15:53:25,462 [INFO] USER:VaishnaviAnilKshirsa helper.py:330:timed LOG: Stage assemble, elapsed time: 0:00:02.614790
+2025-03-29 15:53:25,475 [INFO] USER:VaishnaviAnilKshirsa handlers.py:1037:package_meta LOG: Package meta, bundle: task04_250329.155320
+2025-03-29 15:53:25,475 [INFO] USER:VaishnaviAnilKshirsa meta_processor.py:513:create_meta LOG: Bundle path: C:/AWS/aws-task/task04/bundles/task04_250329.155320
+2025-03-29 15:53:25,481 [INFO] USER:VaishnaviAnilKshirsa helper.py:292:write_content_to_file LOG: C:\AWS\aws-task\task04\.syndicate-config-dev/bundles/task04_250329.155320\build_meta.json file was created.
+2025-03-29 15:53:25,482 [INFO] USER:VaishnaviAnilKshirsa handlers.py:1040:package_meta LOG: Meta was configured successfully.
+2025-03-29 15:53:25,483 [INFO] USER:VaishnaviAnilKshirsa helper.py:330:timed LOG: Stage package_meta, elapsed time: 0:00:00.008172
+2025-03-29 15:53:25,702 [INFO] USER:VaishnaviAnilKshirsa handlers.py:1083:upload LOG: Upload bundle: task04_250329.155320
+2025-03-29 15:53:26,100 [INFO] USER:VaishnaviAnilKshirsa bundle_processor.py:232:upload_bundle_to_s3 LOG: Bundle was validated successfully
+2025-03-29 15:53:27,648 [INFO] USER:VaishnaviAnilKshirsa handlers.py:1090:upload LOG: Bundle was uploaded successfully
+2025-03-29 15:53:27,648 [INFO] USER:VaishnaviAnilKshirsa helper.py:330:timed LOG: Stage upload, elapsed time: 0:00:02.160251
+2025-03-29 15:53:27,672 [INFO] USER:VaishnaviAnilKshirsa helper.py:330:timed LOG: Stage build, elapsed time: 0:00:06.779376
+2025-03-29 15:53:46,189 [INFO] USER:VaishnaviAnilKshirsa handlers.py:106:syndicate LOG: Configuration used: C:\AWS\aws-task\task04\.syndicate-config-dev
+2025-03-29 15:53:48,430 [INFO] USER:VaishnaviAnilKshirsa processor.py:143:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-03-29 15:53:50,079 [INFO] USER:VaishnaviAnilKshirsa project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-29 15:53:50,079 [INFO] USER:VaishnaviAnilKshirsa project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-29 15:53:50,582 [INFO] USER:VaishnaviAnilKshirsa sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-29 15:53:50,994 [INFO] USER:VaishnaviAnilKshirsa project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-29 15:53:50,994 [INFO] USER:VaishnaviAnilKshirsa project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-29 15:53:51,405 [INFO] USER:VaishnaviAnilKshirsa sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-29 15:53:51,405 [INFO] USER:VaishnaviAnilKshirsa helper.py:233:resolve_default_value LOG: Resolved value of deploy_name: task04
+2025-03-29 15:53:51,791 [INFO] USER:VaishnaviAnilKshirsa project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-29 15:53:51,791 [INFO] USER:VaishnaviAnilKshirsa project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-29 15:53:52,316 [INFO] USER:VaishnaviAnilKshirsa sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-29 15:53:52,316 [INFO] USER:VaishnaviAnilKshirsa helper.py:233:resolve_default_value LOG: Resolved value of bundle_name: task04_250329.155320
+2025-03-29 15:53:52,740 [INFO] USER:VaishnaviAnilKshirsa project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-29 15:53:52,740 [INFO] USER:VaishnaviAnilKshirsa project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-29 15:53:53,249 [INFO] USER:VaishnaviAnilKshirsa sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-29 15:53:53,676 [INFO] USER:VaishnaviAnilKshirsa project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-29 15:53:53,676 [INFO] USER:VaishnaviAnilKshirsa project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-29 15:53:54,169 [INFO] USER:VaishnaviAnilKshirsa sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-29 15:53:56,821 [INFO] USER:VaishnaviAnilKshirsa deployment_processor.py:451:create_deployment_resources LOG: The latest deployment has status failed. Loaded output:
+ {
+    "arn:aws:iam::890742610830:policy/cmtr-79e6d823-lambda-basic-execution": {
+        "resource_name": "cmtr-79e6d823-lambda-basic-execution",
+        "resource_meta": {
+            "policy_content": {
+                "Statement": [
+                    {
+                        "Action": [
+                            "logs:CreateLogGroup",
+                            "logs:CreateLogStream",
+                            "logs:PutLogEvents",
+                            "dynamodb:GetItem",
+                            "dynamodb:Query",
+                            "dynamodb:PutItem",
+                            "dynamodb:Batch*",
+                            "dynamodb:DeleteItem",
+                            "ssm:PutParameter",
+                            "ssm:GetParameter",
+                            "kms:Decrypt"
+                        ],
+                        "Effect": "Allow",
+                        "Resource": "*"
+                    }
+                ],
+                "Version": "2012-10-17"
+            },
+            "resource_type": "iam_policy",
+            "tags": {
+                "run_id": "JAP-11",
+                "run_type": "stm",
+                "type": "user",
+                "user_id": "79e6d823"
+            }
+        },
+        "description": {
+            "PolicyName": "cmtr-79e6d823-lambda-basic-execution",
+            "PolicyId": "ANPA46ZDFTOHODTQ4DMRA",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 2,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2025-03-28T14:18:20+00:00",
+            "UpdateDate": "2025-03-28T14:18:20+00:00",
+            "Tags": [
+                {
+                    "Key": "run_id",
+                    "Value": "JAP-11"
+                },
+                {
+                    "Key": "run_type",
+                    "Value": "stm"
+                },
+                {
+                    "Key": "type",
+                    "Value": "user"
+                },
+                {
+                    "Key": "user_id",
+                    "Value": "79e6d823"
+                }
+            ]
+        }
+    },
+    "arn:aws:iam::890742610830:role/cmtr-79e6d823-sns_handler-role": {
+        "resource_name": "cmtr-79e6d823-sns_handler-role",
+        "resource_meta": {
+            "predefined_policies": [],
+            "principal_service": "lambda",
+            "custom_policies": [
+                "cmtr-79e6d823-lambda-basic-execution"
+            ],
+            "resource_type": "iam_role",
+            "tags": {
+                "run_id": "JAP-11",
+                "run_type": "stm",
+                "type": "user",
+                "user_id": "79e6d823"
+            },
+            "permissions_boundary": "undefined"
+        },
+        "description": {
+            "Path": "/",
+            "RoleName": "cmtr-79e6d823-sns_handler-role",
+            "RoleId": "AROA46ZDFTOHIAOPWVPTA",
+            "CreateDate": "2025-03-28T14:18:21+00:00",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "lambda.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "MaxSessionDuration": 3600,
+            "Tags": [
+                {
+                    "Key": "run_id",
+                    "Value": "JAP-11"
+                },
+                {
+                    "Key": "run_type",
+                    "Value": "stm"
+                },
+                {
+                    "Key": "type",
+                    "Value": "user"
+                },
+                {
+                    "Key": "user_id",
+                    "Value": "79e6d823"
+                }
+            ],
+            "RoleLastUsed": {}
+        }
+    },
+    "arn:aws:iam::890742610830:role/cmtr-79e6d823-sqs_handler-role": {
+        "resource_name": "cmtr-79e6d823-sqs_handler-role",
+        "resource_meta": {
+            "predefined_policies": [],
+            "principal_service": "lambda",
+            "custom_policies": [
+                "cmtr-79e6d823-lambda-basic-execution"
+            ],
+            "resource_type": "iam_role",
+            "tags": {
+                "run_id": "JAP-11",
+                "run_type": "stm",
+                "type": "user",
+                "user_id": "79e6d823"
+            },
+            "permissions_boundary": "undefined"
+        },
+        "description": {
+            "Path": "/",
+            "RoleName": "cmtr-79e6d823-sqs_handler-role",
+            "RoleId": "AROA46ZDFTOHL5RADUAGD",
+            "CreateDate": "2025-03-28T14:18:22+00:00",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "lambda.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "MaxSessionDuration": 3600,
+            "Tags": [
+                {
+                    "Key": "run_id",
+                    "Value": "JAP-11"
+                },
+                {
+                    "Key": "run_type",
+                    "Value": "stm"
+                },
+                {
+                    "Key": "type",
+                    "Value": "user"
+                },
+                {
+                    "Key": "user_id",
+                    "Value": "79e6d823"
+                }
+            ],
+            "RoleLastUsed": {
+                "LastUsedDate": "2025-03-28T14:20:52+00:00",
+                "Region": "eu-west-1"
+            }
+        }
+    },
+    "arn:aws:sqs:eu-west-1:890742610830:cmtr-79e6d823-async_queue": {
+        "resource_name": "cmtr-79e6d823-async_queue",
+        "resource_meta": {
+            "resource_type": "sqs_queue",
+            "fifo_queue": false,
+            "visibility_timeout": 150,
+            "delay_seconds": 0,
+            "maximum_message_size": 1024,
+            "message_retention_period": 60,
+            "receive_message_wait_time_seconds": 0,
+            "policy": {},
+            "redrive_policy": {},
+            "content_based_deduplication": false,
+            "tags": {
+                "run_id": "JAP-11",
+                "run_type": "stm",
+                "type": "user",
+                "user_id": "79e6d823"
+            },
+            "region": "eu-west-1"
+        },
+        "description": {
+            "Attributes": {
+                "QueueArn": "arn:aws:sqs:eu-west-1:890742610830:cmtr-79e6d823-async_queue",
+                "ApproximateNumberOfMessages": "0",
+                "ApproximateNumberOfMessagesNotVisible": "0",
+                "ApproximateNumberOfMessagesDelayed": "0",
+                "CreatedTimestamp": "1743171521",
+                "LastModifiedTimestamp": "1743171521",
+                "VisibilityTimeout": "150",
+                "MaximumMessageSize": "1024",
+                "MessageRetentionPeriod": "60",
+                "DelaySeconds": "0",
+                "ReceiveMessageWaitTimeSeconds": "0",
+                "SqsManagedSseEnabled": "true"
+            },
+            "ResponseMetadata": {
+                "RequestId": "87512e74-afef-5666-aea0-4e15681e08d9",
+                "HTTPStatusCode": 200,
+                "HTTPHeaders": {
+                    "x-amzn-requestid": "87512e74-afef-5666-aea0-4e15681e08d9",
+                    "date": "Sat, 29 Mar 2025 10:04:33 GMT",
+                    "content-type": "text/xml",
+                    "content-length": "1249",
+                    "connection": "keep-alive"
+                },
+                "RetryAttempts": 0
+            }
+        }
+    },
+    "arn:aws:lambda:eu-west-1:890742610830:function:cmtr-79e6d823-sns_handler:dev": {
+        "resource_name": "cmtr-79e6d823-sns_handler",
+        "resource_meta": {
+            "version": "1.0",
+            "name": "cmtr-79e6d823-sns_handler",
+            "func_name": "lambdas/sns_handler/index.handler",
+            "resource_type": "lambda",
+            "iam_role_name": "cmtr-79e6d823-sns_handler-role",
+            "runtime": "nodejs20.x",
+            "memory": 128,
+            "timeout": 100,
+            "lambda_path": "lambdas\\sns_handler",
+            "dependencies": [],
+            "event_sources": [
+                {
+                    "resource_type": "sns_topic_trigger",
+                    "target_topic": "cmtr-79e6d823-lambda_topic",
+                    "region": "eu-west-1"
+                }
+            ],
+            "env_variables": {},
+            "publish_version": true,
+            "alias": "dev",
+            "url_config": {},
+            "ephemeral_storage": 512,
+            "tags": {
+                "run_id": "JAP-11",
+                "run_type": "stm",
+                "type": "user",
+                "user_id": "79e6d823"
+            },
+            "s3_path": "task04_250329.153337/sns_handler-1.0.zip",
+            "region": "eu-west-1"
+        },
+        "description": {
+            "ResponseMetadata": {
+                "RequestId": "67168913-a4a4-4b64-a57d-bd9afe3d208f",
+                "HTTPStatusCode": 200,
+                "HTTPHeaders": {
+                    "date": "Sat, 29 Mar 2025 10:04:36 GMT",
+                    "content-type": "application/json",
+                    "content-length": "2803",
+                    "connection": "keep-alive",
+                    "x-amzn-requestid": "67168913-a4a4-4b64-a57d-bd9afe3d208f"
+                },
+                "RetryAttempts": 0
+            },
+            "Configuration": {
+                "FunctionName": "cmtr-79e6d823-sns_handler",
+                "Runtime": "nodejs20.x",
+                "Role": "arn:aws:iam::890742610830:role/cmtr-79e6d823-sns_handler-role",
+                "Handler": "lambdas/sns_handler/index.handler",
+                "CodeSize": 1542,
+                "Description": " ",
+                "Timeout": 100,
+                "MemorySize": 128,
+                "LastModified": "2025-03-28T14:18:47.757+0000",
+                "CodeSha256": "6nv5Nj9cDSSvCYOuXCeW6xKF6xMnQIUQvGhPXgaEICE=",
+                "Version": "$LATEST",
+                "TracingConfig": {
+                    "Mode": "PassThrough"
+                },
+                "RevisionId": "86276132-4def-4814-970c-e564033bf38a",
+                "Layers": [],
+                "State": "Active",
+                "LastUpdateStatus": "Successful",
+                "PackageType": "Zip",
+                "Architectures": [
+                    "x86_64"
+                ],
+                "EphemeralStorage": {
+                    "Size": 512
+                },
+                "SnapStart": {
+                    "ApplyOn": "None",
+                    "OptimizationStatus": "Off"
+                },
+                "RuntimeVersionConfig": {
+                    "RuntimeVersionArn": "arn:aws:lambda:eu-west-1::runtime:9d084cce5cc7578c503eb8fe4bf7891c94c8f5f0ccb036f3f8c3a01cf5212db6"
+                }
+            },
+            "Code": {
+                "RepositoryType": "S3",
+                "Location": "https://awslambda-eu-west-1-tasks.s3.eu-west-1.amazonaws.com/snapshots/890742610830/cmtr-79e6d823-sns_handler-e88d5399-c6ee-4261-bfb0-4b8b2fceae8a?versionId=sBicF3GOHrzeArfpg5E11uyQmdX6_JNj&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEAIaCWV1LXdlc3QtMSJGMEQCIFIr6cosY7nYG6F2m5SyaCFlxB4%2BMh3xneGsx2mwb7GRAiAquyVwaNd29UHL657PG6VNBT9DjZ8atDPlJ3I6VbJDaSqJAghrEAQaDDk1NDM2OTA4MjUxMSIM8fvezw9KQUHu5OYhKuYBIEQ3zsRcsMyJcygssee%2F%2FNsWpPUWehF5yqHmZ%2FVnHoLtHGCPOKlozU9ValtrtmjxDZIq0LCQqNZWYoXAtkStFFibv%2FLiQwpKmOx33M4oYt7mIVr22YWaCXgaK8IhlCFA0o6R7zLsQOrgxM01FOWxPYOcN4Rrwusjk6V9EGq5QaBJfHkjnj8ELpWyX2xYZ%2FScXG500aiXa4BGPGEzUobGPJv4qICVYLcrU18rzNidOPjPlm7LJcFPguXlvDrAgJ9tWLcVzQCnWk2EB84tNzcKoDfMTv9tDKnj5cZ%2FOaxvjqjU8OrePIMw1qKdvwY6kAFvL0k92uSlSMNBIXcxVJVWQDJfS6TlcrNTjVHI9oAGiShisiN0VfqKRS8H5nDFBN0lzVVHK%2BLbovwptQI281w%2FwoSWNsN7YAc9BF7lPv%2FsZyVtbwlIavCuWM4Jruyz5EOZOFGQSsAUEWpkzxgio6d%2FRC9qYIpAdOOf4Qch9Mrv5XREmuAa5B8vWs%2FfhSE5xSk%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250329T100436Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIA54NGUQSHXXMKST7H%2F20250329%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Signature=d63af28d5ebc73cf7ae33c59e8890e85e331c3e6ef0a9cb20ba66960f3ef0407"
+            },
+            "Tags": {
+                "run_id": "JAP-11",
+                "user_id": "79e6d823",
+                "run_type": "stm",
+                "type": "user"
+            }
+        }
+    },
+    "arn:aws:lambda:eu-west-1:890742610830:function:cmtr-79e6d823-sqs_handler:dev": {
+        "resource_name": "cmtr-79e6d823-sqs_handler",
+        "resource_meta": {
+            "version": "1.0",
+            "name": "cmtr-79e6d823-sqs_handler",
+            "func_name": "lambdas/sqs_handler/index.handler",
+            "resource_type": "lambda",
+            "iam_role_name": "cmtr-79e6d823-sqs_handler-role",
+            "runtime": "nodejs20.x",
+            "memory": 128,
+            "timeout": 100,
+            "lambda_path": "lambdas\\sqs_handler",
+            "dependencies": [],
+            "event_sources": [
+                {
+                    "resource_type": "sqs_trigger",
+                    "target_queue": "cmtr-79e6d823-async_queue",
+                    "batch_size": 10
+                }
+            ],
+            "env_variables": {},
+            "publish_version": true,
+            "alias": "dev",
+            "url_config": {},
+            "ephemeral_storage": 512,
+            "tags": {
+                "run_id": "JAP-11",
+                "run_type": "stm",
+                "type": "user",
+                "user_id": "79e6d823"
+            },
+            "s3_path": "task04_250329.153337/sqs_handler-1.0.zip",
+            "region": "eu-west-1"
+        },
+        "description": {
+            "ResponseMetadata": {
+                "RequestId": "e818b2ad-84c5-4c71-b66d-aaa8a259e859",
+                "HTTPStatusCode": 200,
+                "HTTPHeaders": {
+                    "date": "Sat, 29 Mar 2025 10:04:36 GMT",
+                    "content-type": "application/json",
+                    "content-length": "2813",
+                    "connection": "keep-alive",
+                    "x-amzn-requestid": "e818b2ad-84c5-4c71-b66d-aaa8a259e859"
+                },
+                "RetryAttempts": 0
+            },
+            "Configuration": {
+                "FunctionName": "cmtr-79e6d823-sqs_handler",
+                "Runtime": "nodejs20.x",
+                "Role": "arn:aws:iam::890742610830:role/cmtr-79e6d823-sqs_handler-role",
+                "Handler": "lambdas/sqs_handler/index.handler",
+                "CodeSize": 1547,
+                "Description": " ",
+                "Timeout": 100,
+                "MemorySize": 128,
+                "LastModified": "2025-03-28T14:18:47.476+0000",
+                "CodeSha256": "FYUYpy2vPZRs3aNJZz+zITUjwVXBu7d8Jn8uKR0G+PE=",
+                "Version": "$LATEST",
+                "TracingConfig": {
+                    "Mode": "PassThrough"
+                },
+                "RevisionId": "509cc904-804c-4786-9ce4-9a8a8a450517",
+                "Layers": [],
+                "State": "Active",
+                "LastUpdateStatus": "Successful",
+                "PackageType": "Zip",
+                "Architectures": [
+                    "x86_64"
+                ],
+                "EphemeralStorage": {
+                    "Size": 512
+                },
+                "SnapStart": {
+                    "ApplyOn": "None",
+                    "OptimizationStatus": "Off"
+                },
+                "RuntimeVersionConfig": {
+                    "RuntimeVersionArn": "arn:aws:lambda:eu-west-1::runtime:9d084cce5cc7578c503eb8fe4bf7891c94c8f5f0ccb036f3f8c3a01cf5212db6"
+                }
+            },
+            "Code": {
+                "RepositoryType": "S3",
+                "Location": "https://awslambda-eu-west-1-tasks.s3.eu-west-1.amazonaws.com/snapshots/890742610830/cmtr-79e6d823-sqs_handler-635f800b-ff9d-4077-8bb4-e86771a5470c?versionId=xxk.u.cXR_LvDZ5E57Mps6sRJ0rvXESt&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEAMaCWV1LXdlc3QtMSJIMEYCIQDAaUtrqRPPAbR51%2BqYL3pS5HQdzGz1LRRAR2t45dut%2BAIhAL6s3%2BSVwbkIo0P6cAqtF0%2Bd25LSXD0YaNvo6AUdfmYkKokCCGwQBBoMOTU0MzY5MDgyNTExIgyu8LWpduYyKKiL8Zcq5gGOv2icOqLzfY2fkBQ38R%2BjUCP%2F%2BCJY9Rkk1p0t%2FJtTiodav7Z4b3InDBJERrPvOGTUCdcSqIiZZ1z5ZSKLlBptKx0sU8y48V5zGNvBQMsfSmhWvp0P%2F15RlyZu3M7nkOeQwVhJ9xoSAxFw3yTMTE1NTeQ%2FEeDnIoh9yDY%2FxMZcoMVmYmojZjZkDHhhVy0XRG92J2LJqIwO%2BnEvINQu26GPIs6CULCgjd7m9pIZJuZgHD8u0Sj972VXFmTRC1i9Qea5GhXH5R1%2B3kn9zga%2BfVcJYWDyQE9spT2fcuio7Dh1On6bJFFrcTD8vp2%2FBjqOAT6mXGaoeLMDqUNV29cpqD19WG32%2BCumSM0hUktQzAYfpN8zfRjS4PJsgyD4dG1JFbpodjDxDtQ%2B3kEGWDsUTviwVWQr4bzXyIK7R7Qsfrunr53sv4rVJnZkgzEYbqoxEPgUCNPnXjmPUS6unIF1smSFQYtRfH9I2saIB6viMWTzEzyRYWocDF5UQ7TYEsc%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250329T100436Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIA54NGUQSHX6OU6U23%2F20250329%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Signature=a7b6cd3358a2c3c022630d26ac8652a526faa08701126cbf5e1c47925c157adc"
+            },
+            "Tags": {
+                "run_id": "JAP-11",
+                "user_id": "79e6d823",
+                "run_type": "stm",
+                "type": "user"
+            }
+        }
+    }
+}
+2025-03-29 15:53:57,036 [INFO] USER:VaishnaviAnilKshirsa deployment_processor.py:466:create_deployment_resources LOG: Prefixes and suffixes of any resource names have been resolved
+2025-03-29 15:53:57,037 [INFO] USER:VaishnaviAnilKshirsa deployment_processor.py:489:create_deployment_resources LOG: Going to deploy AWS resources
+2025-03-29 15:53:57,454 [INFO] USER:VaishnaviAnilKshirsa deployment_processor.py:74:_process_resources LOG: Processing iam_policy resources
+2025-03-29 15:53:59,494 [WARNING] USER:VaishnaviAnilKshirsa iam_resource.py:115:_create_policy_from_meta LOG: IAM policy cmtr-79e6d823-lambda-basic-execution exists.
+2025-03-29 15:53:59,801 [INFO] USER:VaishnaviAnilKshirsa deployment_processor.py:74:_process_resources LOG: Processing iam_role resources
+2025-03-29 15:54:00,108 [WARNING] USER:VaishnaviAnilKshirsa iam_resource.py:141:_create_role_from_meta LOG: IAM role cmtr-79e6d823-sns_handler-role exists.
+2025-03-29 15:54:01,645 [WARNING] USER:VaishnaviAnilKshirsa iam_resource.py:141:_create_role_from_meta LOG: IAM role cmtr-79e6d823-sqs_handler-role exists.
+2025-03-29 15:54:01,645 [INFO] USER:VaishnaviAnilKshirsa deployment_processor.py:74:_process_resources LOG: Processing sns_topic resources
+2025-03-29 15:54:03,087 [ERROR] USER:VaishnaviAnilKshirsa deployment_processor.py:387:process_response LOG: Caused by resource named cmtr-79e6d823-lambda_topic. An error occurred (AuthorizationError) when calling the ListTopics operation: User: arn:aws:sts::890742610830:assumed-role/cmtr_syndicate_student_programmatic_accessv2/79e6d823 is not authorized to perform: SNS:ListTopics on resource: arn:aws:sns:eu-central-1:890742610830:* with an explicit deny in a service control policy
+2025-03-29 15:54:03,087 [INFO] USER:VaishnaviAnilKshirsa deployment_processor.py:74:_process_resources LOG: Processing sqs_queue resources
+2025-03-29 15:54:04,715 [WARNING] USER:VaishnaviAnilKshirsa sqs_resource.py:104:_create_sqs_queue_from_meta LOG: SQS queue cmtr-79e6d823-async_queue exists.
+2025-03-29 15:54:04,919 [INFO] USER:VaishnaviAnilKshirsa deployment_processor.py:88:_process_resources LOG: Processing lambda resources
+2025-03-29 15:54:07,723 [WARNING] USER:VaishnaviAnilKshirsa lambda_resource.py:313:_create_lambda_from_meta LOG: cmtr-79e6d823-sqs_handler lambda exists.
+2025-03-29 15:54:07,725 [WARNING] USER:VaishnaviAnilKshirsa lambda_resource.py:313:_create_lambda_from_meta LOG: cmtr-79e6d823-sns_handler lambda exists.
+2025-03-29 15:54:09,321 [WARNING] USER:VaishnaviAnilKshirsa bundle_processor.py:110:remove_failed_deploy_output LOG: Failed output file for deploy task04 does not exist
+2025-03-29 15:54:09,324 [INFO] USER:VaishnaviAnilKshirsa deployment_processor.py:527:create_deployment_resources LOG: Going to apply post deployment tags
+2025-03-29 15:54:09,332 [INFO] USER:VaishnaviAnilKshirsa group_tagging_api_resource.py:135:apply_tags LOG: Tags were successfully applied
+2025-03-29 15:54:09,332 [INFO] USER:VaishnaviAnilKshirsa deployment_processor.py:530:create_deployment_resources LOG: Going to create deploy output
+2025-03-29 15:54:09,934 [INFO] USER:VaishnaviAnilKshirsa bundle_processor.py:71:create_deploy_output LOG: Output file with name task04_250329.155320/outputs/task04_failed.json has been created
+2025-03-29 15:54:09,934 [INFO] USER:VaishnaviAnilKshirsa deployment_processor.py:560:create_deployment_resources LOG: Deploy output for task04 was created.
+2025-03-29 15:54:09,934 [WARNING] USER:VaishnaviAnilKshirsa handlers.py:344:deploy LOG: Backend resources were deployed with errors. See deploy output file.
+2025-03-29 15:54:09,934 [INFO] USER:VaishnaviAnilKshirsa helper.py:330:timed LOG: Stage deploy, elapsed time: 0:00:15.765051
+2025-03-29 15:54:10,359 [INFO] USER:VaishnaviAnilKshirsa project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-29 15:54:10,359 [INFO] USER:VaishnaviAnilKshirsa project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-29 15:54:10,856 [INFO] USER:VaishnaviAnilKshirsa sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
